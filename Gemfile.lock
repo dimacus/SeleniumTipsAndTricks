@@ -14,6 +14,7 @@ GEM
     ffi (1.0.11)
     gherkin (2.8.0)
       json (>= 1.4.6)
+    headless (0.2.2)
     json (1.6.5)
     multi_json (1.0.4)
     rubyzip (0.9.6.1)
@@ -29,4 +30,5 @@ PLATFORMS
 
 DEPENDENCIES
   cucumber
+  headless
   selenium-webdriver
