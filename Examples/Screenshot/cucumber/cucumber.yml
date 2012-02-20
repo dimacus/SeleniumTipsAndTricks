@@ -1,0 +1,1 @@
+default: --format html --out TEST-OUTPUT.html --format pretty
