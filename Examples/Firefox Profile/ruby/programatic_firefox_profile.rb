@@ -9,6 +9,13 @@ profile["browser.download.dir"]                   = download_dir
 profile["browser.download.lastDir"]               = download_dir
 profile["browser.download.folderList"]            = 2
 
+require 'debug'
+if File.exists?("#{Dir.pwd}/extensions/firebug@software.joehewitt.com.xpi")
+  
+  add_extension
+end
+
+
 
 @driver = Selenium::WebDriver.for :firefox, {:profile => profile}
 begin
