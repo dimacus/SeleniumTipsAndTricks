@@ -20,8 +20,12 @@ if File.exists?(firebug_extension)
   profile["extensions.firebug.currentVersion"] = "1.9.1"
 end
 
+
 @driver = Selenium::WebDriver.for :firefox, {:profile => profile}
+
+
 begin
+    
   @driver.navigate.to "http://seleniumhq.org/docs/"
   
   @driver.find_element(:link, "Offline version (pdf)").click
