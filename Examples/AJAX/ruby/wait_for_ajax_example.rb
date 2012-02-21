@@ -5,7 +5,7 @@ require "selenium-webdriver"
 
 def wait_for_ajax
   begin
-    puts "Waiting for AJAX to complete"
+    puts "Waiting to login, and AJAX to finish"
     sleep 0.3
   end while (@driver.execute_script("return jQuery.active") != 0)
     puts "\n\nAJAX loaded!!\n\n"
