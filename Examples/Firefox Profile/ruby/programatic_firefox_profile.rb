@@ -3,19 +3,22 @@ require "selenium-webdriver"
 require 'pdf_parser'
 
 profile = Selenium::WebDriver::Firefox::Profile.new
+
+#Setup download preferences to auto download PDFs and other aproved files directly to
+#Specified dir which does not have to already exist
 download_dir = "#{Dir.pwd}/download_dir_from_programatic_profile"
 profile["browser.helperApps.neverAsk.saveToDisk"] = "text/plain,application/pdf,application/zip,text/csv"
 profile["browser.download.dir"]                   = download_dir
 profile["browser.download.lastDir"]               = download_dir
 profile["browser.download.folderList"]            = 2
 
-require 'debug'
-if File.exists?("#{Dir.pwd}/extensions/firebug@software.joehewitt.com.xpi")
-  
-  add_extension
+
+#Add Firebug extension to the profile
+firebug_extension = "#{Dir.pwd}/extensions/firebug@software.joehewitt.com.xpi"
+if File.exists?(firebug_extension) 
+  profile.add_extension(firebug_extension) 
+  profile["extensions.firebug.currentVersion"] = "1.9.1"
 end
-
-
 
 @driver = Selenium::WebDriver.for :firefox, {:profile => profile}
 begin
