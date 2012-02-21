@@ -14,7 +14,7 @@ sauce_params[:access_key] = nil
 
 if sauce_params[:username].nil? or sauce_params[:access_key].nil?
   puts "Plese create a saucelabs account and provide it in the config"
-  exitgit 
+  exit
 end
 
 
