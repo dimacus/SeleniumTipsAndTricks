@@ -16,6 +16,13 @@ bundle install
 ```
 You might need to execute these commands with sudo on your local machine.
 
+
+### Warning
+These examples were written on a Mac, I have executed them successfully on a linux box, but there is not guarantee that they will work on Windows out of the box.
+
+But as most cases, if you work on it for a couple hours, you can make most things work on Windows.
+
+
 ### Ruby examples
 
 To run an example, you need to make sure you have all the gems installed and have Firefox 3.6 or higher installed.
