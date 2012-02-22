@@ -27,6 +27,9 @@ GEM
     pdf-reader (1.0.0)
       Ascii85 (~> 1.0.0)
       ruby-rc4
+    rack (1.4.1)
+    rack-protection (1.2.0)
+      rack
     rest-client (1.6.7)
       mime-types (>= 1.16)
     ruby-rc4 (0.1.5)
@@ -45,7 +48,14 @@ GEM
       ffi (~> 1.0.9)
       multi_json (~> 1.0.4)
       rubyzip
+    sim_launcher (0.3.5)
+      sinatra
+    sinatra (1.3.2)
+      rack (~> 1.3, >= 1.3.6)
+      rack-protection (~> 1.2)
+      tilt (~> 1.3, >= 1.3.3)
     term-ansicolor (1.0.7)
+    tilt (1.3.3)
 
 PLATFORMS
   ruby
@@ -56,3 +66,4 @@ DEPENDENCIES
   pdf-reader
   sauce
   selenium-webdriver
+  sim_launcher
