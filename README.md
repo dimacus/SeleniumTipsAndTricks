@@ -8,7 +8,9 @@ http://seleniumcamp.com/
 
 You will need ruby, git for starters.
 
-> git clone git@github.com:dimacus/SeleniumTipsAndTricks.git
-> cd SeleniumTipsAndTricks
-> gem install bundler
-> bundle install
+```bash
+git clone git@github.com:dimacus/SeleniumTipsAndTricks.git
+cd SeleniumTipsAndTricks
+gem install bundler
+bundle install
+```
