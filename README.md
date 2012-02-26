@@ -76,6 +76,6 @@ And I don't have a windows box available to test this on.
 
 Currently the movie example only works on linux. I'm working on some tutorials for Windows and Mac.
 
-On linux, it is assumed that XVFB and ffmpeg are installed. Please seem the headless gem for more info https://github.com/leonid-shevtsov/headless
+On linux, it is assumed that XVFB and ffmpeg are installed. Please see the headless gem for more info https://github.com/leonid-shevtsov/headless
 
 Code currently assume that DISPLAY :1 is free, and uses that display to start XVFB and video recording on. You can change that in code to display you wish to use.
