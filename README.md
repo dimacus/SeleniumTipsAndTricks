@@ -1,6 +1,7 @@
 Selenium Tips And Tricks Presentation
 =====================================
 
+
 Given by Dima Kovalenko at Selenium Camp 2012
 http://seleniumcamp.com/
 
